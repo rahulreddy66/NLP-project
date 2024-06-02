@@ -1,0 +1,72 @@
+{%extends "index.html" %}
+{%block content%}
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+ <div class="card text-center">
+        <div class="card-header">
+        <strong>   Original Entered Text : </strong>
+        </div>
+        <div class="card-body">
+            
+            <p id="new" class="card-text">
+            
+             {{ rawtext }}
+            </p>
+
+        </div>
+      
+    </div>
+
+
+
+ <br>
+
+ <div class="card text-center">
+    <div class="card-header">
+    <strong>   Sentiment</strong>
+    </div>
+    <div class="card-body">
+        
+        <p id="new" class="card-text">
+        
+         {{ sentiment }}
+        </p>
+  
+    </div>
+  
+  </div>
+  <br>
+
+ <div class="card text-center">
+  <div class="card-header">
+  <strong>   Summarized Text</strong>
+  </div>
+  <div class="card-body">
+      
+      <p id="new" class="card-text">
+      
+       {{ summary }}
+      </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+ 
+  
+
+  
+
+  
+
+{% endblock %}
+
+
+
